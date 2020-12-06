@@ -74,13 +74,13 @@ header {
   min-height: 100vh;
   backdrop-filter: blur(10px) saturate(0%);
   .heroContainer {
+    height: max-content;
     max-width: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column-reverse;
     background: rgba(245, 241, 227, 0.7);
-    height: max-content;
     border-radius: 0;
     box-shadow: 0px 0px 50px $primary;
     position: relative;
@@ -92,7 +92,6 @@ header {
     .bottom {
       overflow: hidden;
       margin-bottom: -150px;
-      text-align: center;
       svg {
         z-index: 0;
         width: 320px;
