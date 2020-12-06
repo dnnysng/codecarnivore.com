@@ -73,8 +73,8 @@ header nav .navbar-nav a.nav-item:hover {
           justify-content: center;
   overflow: hidden;
   min-height: 100vh;
-  -webkit-backdrop-filter: blur(3px) saturate(0%);
-          backdrop-filter: blur(3px) saturate(0%);
+  -webkit-backdrop-filter: blur(10px) saturate(0%);
+          backdrop-filter: blur(10px) saturate(0%);
 }
 
 #hero .heroContainer {
@@ -246,7 +246,8 @@ header nav .navbar-nav a.nav-item:hover {
 }
 
 .container .insideContainer .card img {
-  max-width: 300px;
+  min-height: 120px;
+  max-height: 200px;
   -webkit-filter: drop-shadow(0px 25px 22px #050505);
           filter: drop-shadow(0px 25px 22px #050505);
   margin-top: 1rem;
