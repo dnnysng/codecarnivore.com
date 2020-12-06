@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Syne+Mono&display=swap");
+
+$primary: #dc143c;
+$black: #050505;
+$white: #fdfdfd;
+$cream: #f5f1e3;
+$darkCream: #dddbcb;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+  background: $cream;
+  background: url('../assets/backgrounds/kb_mouse_rgb.png');
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Syne Mono", monospace;
+}
+
+a.button {
+  background: $black;
+  padding: 0.5rem 0rem;
+  width: 80%;
+  border: none;
+  color: $white;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+
+header {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  border-bottom: 2px solid $primary;
+  backdrop-filter: blur(50px);
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  nav {
+    .navbar-brand {
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      font-size: 1.2rem;
+      font-family: "Syne Mono", monospace;
+    }
+    .navbar-nav {
+      text-align: center;
+      a {
+        font-size: .9rem;
+        transition: .3s all ease-in-out;
+      }
+      a.nav-item:hover {
+        color: $primary !important;
+      }
+    }
+  }
+}
+
+#hero {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  min-height: 100vh;
+  backdrop-filter: blur(3px) saturate(0%);
+  .heroContainer {
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    background: rgba(245, 241, 227, 0.7);
+    height: max-content;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 0px 50px $primary;
+    .top {
+      padding: 3rem;
+      color: $black;
+    }
+    .bottom {
+      overflow: hidden;
+      margin-bottom: -150px;
+      text-align: center;
+      svg {
+        z-index: 0;
+        width: 320px;
+      }
+    }
+    .bigButtons {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      a {
+        text-decoration: none;
+        color: $white;
+      }
+      .bigButton {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100px;
+        height: 100px;
+        margin: 1rem 1rem 2rem 1rem;
+        transition: .3s all ease-in-out;
+        h4 {
+          font-size: 1rem;
+          color: $black;
+        }
+        .fa-keyboard,
+        .fa-desktop,
+        .fa-mouse,
+        .fa-tshirt {
+          font-size: 2rem;
+          color: $primary;
+          margin-bottom: 5px;
+        }
+      }
+      .bigButton:hover {
+        background: $black;
+        h4 {
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+#keyboards.container {
+  background: $black;
+  background: url("../assets/backgrounds/kb_mouse_rgb.png");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#monitors.container {
+  background: $primary;
+  background: url("../assets/backgrounds/crimson_textured_bg.svg");
+  background-size: cover;
+}
+
+.container {
+  min-width: 100%;
+  padding: 10rem 1rem;
+  .insideContainer {
+    background: rgba(0, 0, 0, 0.8);
+    color: $white;
+    position: relative;
+    text-align: center;
+    padding: 2rem;
+    backdrop-filter: grayscale(100%);
+
+    .cardContainer {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+      border-radius: 10px;
+      padding: 1rem;
+      width: 250px;
+      background: $cream;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: $black;
+      margin: 2rem 0rem;
+
+      img {
+        max-width: 300px;
+        filter: drop-shadow(0px 25px 22px $black);
+        margin-top: 1rem;
+      }
+
+      .info {
+        text-align: left;
+        ul {
+          padding: 0;
+          margin-top: 1.5rem;
+          padding: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 450px) {
+  .container {
+    .insideContainer {
+      .cardContainer {
+        .card {
+          margin: 2rem 3rem;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: $black;
+  color: $white;
+  padding: 2rem 2rem 0rem 2rem;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  text-align: center;
+  border-top: 2px solid $primary;
+
+  .social > ul {
+    padding: 0;
+    display: flex;
+    list-style: none;
+    font-size: 2rem;
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0rem 0.5rem;
+      width: 50px;
+      height: 50px;
+      transition: 0.3s all ease-in-out;
+    }
+    li:hover {
+      background: $primary;
+      border-radius: 50%;
+    }
+    a {
+      color: $white;
+      max-width: 100%;
+    }
+  }
+}
