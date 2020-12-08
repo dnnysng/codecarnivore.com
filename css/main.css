@@ -171,7 +171,7 @@ header nav .navbar-nav a.nav-item:hover {
   margin: 2rem 0rem;
 }
 .container .insideContainer .card img {
-  max-width: 300px;
+  max-height: 200px;
   filter: drop-shadow(0px 25px 22px #050505);
   margin-top: 1rem;
 }
