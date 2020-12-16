@@ -155,6 +155,14 @@ header {
           margin-top: 1.5rem;
           padding: 1.5rem;
         }
+        h5 {
+          background: rgba(220, 20, 60, 0.8);
+          color: $white;
+          padding: .5rem 1rem;
+          width: max-content;
+          position: relative;
+          left: -50px;
+        }
       }
     }
   }
@@ -184,7 +192,10 @@ footer {
   text-transform: uppercase;
   text-align: center;
   border-top: 2px solid $primary;
-
+  .copyright {
+    margin-top: -15px;
+  }
+  /*
   .social > ul {
     padding: 0;
     display: flex;
@@ -208,4 +219,5 @@ footer {
       max-width: 100%;
     }
   }
+  */
 }

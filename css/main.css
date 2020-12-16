@@ -146,6 +146,14 @@ header nav .navbar-nav a.nav-item:hover {
   margin-top: 1.5rem;
   padding: 1.5rem;
 }
+.container .insideContainer .card .info h5 {
+  background: rgba(220, 20, 60, 0.8);
+  color: #fdfdfd;
+  padding: 0.5rem 1rem;
+  width: max-content;
+  position: relative;
+  left: -50px;
+}
 
 @media only screen and (min-width: 450px) {
   .container .insideContainer .cardContainer .card {
@@ -164,29 +172,34 @@ footer {
   text-transform: uppercase;
   text-align: center;
   border-top: 2px solid #dc143c;
+  /*
+  .social > ul {
+    padding: 0;
+    display: flex;
+    list-style: none;
+    font-size: 2rem;
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0rem 0.5rem;
+      width: 50px;
+      height: 50px;
+      transition: 0.3s all ease-in-out;
+    }
+    li:hover {
+      background: $primary;
+      border-radius: 50%;
+    }
+    a {
+      color: $white;
+      max-width: 100%;
+    }
+  }
+  */
 }
-footer .social > ul {
-  padding: 0;
-  display: flex;
-  list-style: none;
-  font-size: 2rem;
-}
-footer .social > ul li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0rem 0.5rem;
-  width: 50px;
-  height: 50px;
-  transition: 0.3s all ease-in-out;
-}
-footer .social > ul li:hover {
-  background: #dc143c;
-  border-radius: 50%;
-}
-footer .social > ul a {
-  color: #fdfdfd;
-  max-width: 100%;
+footer .copyright {
+  margin-top: -15px;
 }
 
 /*# sourceMappingURL=main.css.map */
