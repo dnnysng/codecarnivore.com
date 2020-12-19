@@ -16,6 +16,18 @@ body {
   font-family: "Open Sans", sans-serif;
   overflow-x: hidden;
   margin: 0;
+  background: $black;
+}
+
+a {
+  color: $white;
+  text-decoration: none;
+  transition: .3s all ease-in-out;
+}
+
+a:hover {
+  color: $primary;
+  text-decoration: none;
 }
 
 #background {
@@ -45,6 +57,12 @@ a.button {
   color: $white;
   margin-bottom: 1rem;
   border-radius: 10px;
+  text-decoration: none;
+  transition: .3s all ease-in-out;
+}
+
+a.button:hover {
+  background: $primary;
 }
 
 header {
@@ -97,16 +115,39 @@ header {
     border-radius: 20px;
     backdrop-filter: saturate(0%);
     img {
-      max-width: 90%;
+      max-width: 50%;
     }
     h1 {
       font-size: 3rem;
       color: $white;
     }
+    p {
+      margin-top: 1rem;
+      background: $cream;
+      padding: 1rem;
+      border-radius: 10px;
+      color: $black;
+    }
   }
 }
 
-#monitors.container {
+#summary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  background: $cream;
+
+  .summaryContainer {
+    text-align: left;
+    padding: 2rem;
+    max-width: 700px;
+    font-size: 1.3rem;
+  }
+}
+
+#monitors.container,
+#mouses.container {
   background: $primary;
   background: url("../assets/backgrounds/crimson_textured_bg.svg");
   background-size: cover;
@@ -142,10 +183,26 @@ header {
       color: $black;
       margin: 2rem 0rem;
 
+      h4 {
+        color: $primary;
+        text-transform: uppercase;
+        font-size: 2rem;
+      }
+
+      .model {
+        margin-top: -1rem;
+        font-size: 1.1rem;
+      }
+
       img {
-        max-height: 200px;
+        max-height: 300px;
         filter: drop-shadow(0px 25px 22px $black);
-        margin-top: 1rem;
+        margin-top: -3rem;
+        transition: .3s all ease-in-out;
+      }
+
+      img:hover {
+        filter: drop-shadow(0px 25px 22px $primary);
       }
 
       .info {
@@ -165,6 +222,29 @@ header {
         }
       }
     }
+  }
+}
+
+#merch,
+#mouses {
+  img {
+    max-height: 200px;
+    margin: 1rem 0rem 2rem 0rem;
+  }
+}
+
+#privacy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  
+  .privacyContainer {
+    border-radius: 10px;
+    margin: 5rem 0rem;
+    max-width: 800px;
+    background: $cream;
+    padding: 2rem;
   }
 }
 
